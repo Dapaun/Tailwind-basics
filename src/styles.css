@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.anchor {
+  @apply text-blue-500 text-2xl hover:underline hover:text-3xl hover:text-blue-700;
+}
+
+.title {
+  @apply text-white text-4xl cursor-pointer mb-4 hover:scale-150 transition duration-200 lg:text-red-300 md:text-orange-200 sm:text-blue-300;
+}
+
+.box {
+  @apply w-52 h-52 bg-red-500 rounded border-4 border-red-50;
+}
+
+.btn {
+  @apply bg-primary p-2 w-28 rounded hover:shadow active:opacity-60;
+}
