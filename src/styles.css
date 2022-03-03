@@ -2,18 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
-.anchor {
-  @apply text-blue-500 text-2xl hover:underline hover:text-3xl hover:text-blue-700;
-}
-
-.title {
-  @apply text-white text-4xl cursor-pointer mb-4 hover:scale-150 transition duration-200 lg:text-red-300 md:text-orange-200 sm:text-blue-300;
-}
+/* Class si layer pe base directive */
 
 .box {
-  @apply w-52 h-52 bg-red-500 rounded border-4 border-red-50;
+  @apply w-48 h-48 border-4;
 }
 
-.btn {
-  @apply bg-primary p-2 w-28 rounded hover:shadow active:opacity-60;
+@layer base {
+  body {
+    @apply bg-teal-300 text-center sm:bg-red-300 md:bg-orange-300 lg:bg-blue-300 xl:bg-purple-300 2xl:bg-green-300;
+  }
+}
+
+@layer components {
+  box {
+    @apply w-48 h-48 border-4;
+  }
 }
